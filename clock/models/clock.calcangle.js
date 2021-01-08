@@ -4,10 +4,10 @@
  * 		https://www.youtube.com/watch?v=7quiJzP7Hd4
  *		https://www.youtube.com/watch?v=PpxfLHzzRVc
  * 
- * Formule: 	 θ = abs(β + xp - α) 
- * 				  .<-| 	 |       |    |   |-> minute pointer angle
- * 				 / \		 |			 |		|-----> diference proportional of o'time based on minutes quantity
- * 				/   \ 	 |			 |----------> hour pointer angle
+ * Formule: 	 θ = abs(β + xp - α) % 360
+ * 				  .<-| 	 |   |    |   |-> minute pointer angle
+ * 				 / \		 |	 |		|-----> diference proportional of o'time based on minutes quantity
+ * 				/   \ 	 |	 |----------> hour pointer angle
  * 			α/     β   |------------------> result with diference of the angles between the clock pointers
  * *****************************************************************/
 const N_TOT_HOURS		= 12;
